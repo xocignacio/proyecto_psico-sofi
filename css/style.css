@@ -10,49 +10,12 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-    display: flex;
-    height: 120px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    border-bottom:  15px dotted whitesmoke;
-    background-image: url(../multimedia/background-maderaBlanca.jpg);
-    
-}
 
-header .logo {
-    color:#D087E5;
-    font-family: 'Monoton';
-    font-size: 52px;
-}
-
-header .menu ul {
-    display: flex;
-}
-
-header .menu ul li a {   /* NAV */
-    padding: 10px;
-    border: 2px inset rgb(79, 37, 194);
-    margin: 0 10px;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(79, 37, 194);
-    list-style: none;
-    }
-
-header .menu ul li a:hover {
-    background-color: thistle;
-}
-
-.menu {
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
 
 .cuerpoGrid { /* CONTEINER DEL MAIN EN GRID */
     display: grid;
-    background-image: linear-gradient(to left,rgb(252, 243, 252),  rgb(194, 155, 194));
+    background-image: linear-gradient(to left,white ,  rgb(235, 231, 231));
+
     grid-template-areas: 'main1 main2 main3';
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -62,8 +25,8 @@ header .menu ul li a:hover {
 
 .cuerpoMain1{      /* HIJO 1 */
     grid-area: main1;
-   display: grid;
-    border: 4px dotted rgb(79, 37, 194);
+    display: grid;
+    border: 4px inset whitesmoke;
     margin: 50px;
     padding: 50px;
     text-align: center;  
@@ -73,7 +36,7 @@ header .menu ul li a:hover {
 .cuerpoMain2{  /* HIJO 2 */
     grid-area: main2;
     display: grid;
-    border: 4px dotted rgb(79, 37, 194);
+    border: 4px inset whitesmoke;
     margin: 50px;
     padding: 50px;
     text-align: center;
@@ -84,7 +47,7 @@ header .menu ul li a:hover {
 .cuerpoMain3{  /* HIJO 3 */
     grid-area: main3;
     display: grid;
-    border: 4px dotted rgb(79, 37, 194);
+    border: 4px inset whitesmoke;
     margin: 50px;
     padding: 50px;
     text-align: center;  
@@ -93,7 +56,7 @@ header .menu ul li a:hover {
 
 
 article {
-    color: rgb(79, 37, 194);
+    color: black;
     justify-items: center;
     font-size: 20px;
     
@@ -119,17 +82,17 @@ article {
 }
 
 footer .textoFooter {
-    color: rgb(79, 37, 194);
+    color: black;
     grid-area: textoFooter;
     text-align: right;
     display: flex;
     height: 100px;
-    border-left: 4px inset rgb(79, 37, 194);
+    border-left: 4px inset white;
     display: block;
     font-size:24px;
     text-align: center;
     padding: 0%;
-    margin: 5%;
+    margin: 1%;
     
 }
 
@@ -155,7 +118,7 @@ background-position: center;
 
 .body {
    
-    background-image: linear-gradient(to left,rgb(252, 243, 252),  rgb(194, 155, 194));
+    background-image: linear-gradient(to left,white ,  rgb(235, 231, 231));
 
 }
 
@@ -282,7 +245,7 @@ padding: 21px;
 
 .conocemeGrid { /* CONTEINER DEL MAIN pagina conoceme */
     display: grid;
-    background-image: linear-gradient(to left,rgb(252, 243, 252), rgb(194, 155, 194));
+    background-image: linear-gradient(to left,white ,  rgb(235, 231, 231));
     grid-template-areas: 'conoceme1 conoceme2';
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -314,7 +277,7 @@ padding: 21px;
 }
 
 .fondoConoceme {     /* foto de conoceme */
-    background-image:url(../multimedia/watercolor-4117017_1280.png);
+    background-image:url(../multimedia/fondoConoceme.jpg);
     display: flex;
     min-height: 439px;
     border: 0px inset rgb(79, 37, 194);
@@ -418,3 +381,16 @@ padding: 21px;
     height: 200px;
 }
 
+.textoCarrusel {
+    color: white;
+   
+    font-family: 'Roboto Mono', monospace;
+    font-size: xx-large;
+
+}
+
+
+
+.img {
+background-image: cover;
+}
