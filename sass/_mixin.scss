@@ -14,16 +14,17 @@
 }
 
 
-@mixin cajitas {
-    display: grid;
+@mixin cajitas ($gridArea) {
+        grid-area: $gridArea;
+        display: grid;
         border: 1px inset whitesmoke;
         margin: 50px;
         padding: 50px;
         text-align: center;  
 }
 
-@mixin article {
-    color: black;
+@mixin article ($color) {
+    color: $color;
     justify-items: center;
     font-size: 20px;      
 
@@ -47,9 +48,9 @@
 
 }
 
-@mixin cajitaFooter {
+@mixin cajitaFooter ($gridArea) {
     color: black;
-    grid-area: textoFooter;
+    grid-area: $gridArea;
     text-align: right;
     display: flex;
     height: 100px;
@@ -74,7 +75,8 @@
     
  }
 
- @mixin cajitaContacto {
+ @mixin cajitaContacto ($gridArea) {
+    grid-area: $gridArea ;
     display: grid;
     border: 4px dotted black;
     margin: 30px;
@@ -93,9 +95,10 @@
     padding: 0px;
 }
 
-@mixin cajitasConoceme {
+@mixin cajitasConoceme ($gridArea) {
+    grid-area: $gridArea;
     display: grid;
-    margin: 30px;
+    margin:30px;
     padding: 30px;
     text-align: center;  
     justify-items: center;
@@ -116,7 +119,8 @@
     
 }
 
-@mixin cajitasPreguntas {
+@mixin cajitasPreguntas ($gridArea) {
+    grid-area: $gridArea;
     display: grid;
     color: black;
     margin: 15px + (15);

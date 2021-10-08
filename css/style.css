@@ -17,7 +17,7 @@ html {
 }
 
 .cuerpoGrid {
-  /* CONTEINER DEL MAIN INDEX */
+  /* CONTEINER PADRE INDEX */
   display: -ms-grid;
   display: grid;
   background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
@@ -29,7 +29,7 @@ html {
       grid-template-rows: 1fr;
 }
 
-.cuerpoMain1 {
+.cuerpoGrid .cuerpoMain1 {
   /* HIJO 1 */
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -42,7 +42,7 @@ html {
   text-align: center;
 }
 
-.cuerpoMain2 {
+.cuerpoGrid .cuerpoMain2 {
   /* HIJO 2 */
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -55,7 +55,7 @@ html {
   text-align: center;
 }
 
-.cuerpoMain3 {
+.cuerpoGrid .cuerpoMain3 {
   /* HIJO 3 */
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -133,7 +133,7 @@ footer .textoFooter {
 }
 
 .contactoGrid {
-  /* CONTEINER DEL MAIN pagina contacto */
+  /* CONTEINER PADRE pagina contacto */
   display: -ms-grid;
   display: grid;
   background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
@@ -148,7 +148,7 @@ footer .textoFooter {
   padding: 0px;
 }
 
-.contacto1 {
+.contactoGrid .contacto1 {
   /* HIJO 1 */
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -161,7 +161,7 @@ footer .textoFooter {
   text-align: center;
 }
 
-.contacto2 {
+.contactoGrid .contacto2 {
   /* HIJO 2 */
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -227,7 +227,7 @@ footer .textoFooter {
 }
 
 .conocemeGrid {
-  /* CONTEINER DEL MAIN pagina conoceme */
+  /* CONTEINER padre pagina conoceme */
   display: -ms-grid;
   display: grid;
   background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
@@ -241,7 +241,7 @@ footer .textoFooter {
   padding: 0px;
 }
 
-.conoceme1 {
+.conocemeGrid .conoceme1 {
   /* HIJO 1  */
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -254,7 +254,7 @@ footer .textoFooter {
   justify-items: center;
 }
 
-.conoceme2 {
+.conocemeGrid .conoceme2 {
   /* hijo 2  */
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -268,7 +268,7 @@ footer .textoFooter {
 }
 
 .preguntasGrid {
-  /* CONTEINER DEL MAIN preguntas */
+  /* CONTEINER PADRE preguntas */
   display: -ms-grid;
   display: grid;
   background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
@@ -282,7 +282,7 @@ footer .textoFooter {
   padding: 0px;
 }
 
-.preguntas1 {
+.preguntasGrid .preguntas1 {
   /* HIJO 1     */
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -296,9 +296,8 @@ footer .textoFooter {
   justify-items: center;
 }
 
-.preguntas2 {
-  /* HIJO 2
-    */
+.preguntasGrid .preguntas2 {
+  /* HIJO 2    */
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: preguntas2;
@@ -311,9 +310,8 @@ footer .textoFooter {
   justify-items: center;
 }
 
-.preguntas3 {
-  /* HIJO 3
-    */
+.preguntasGrid .preguntas3 {
+  /* HIJO 3    */
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: preguntas3;
@@ -326,7 +324,7 @@ footer .textoFooter {
   justify-items: center;
 }
 
-.preguntas4 {
+.preguntasGrid .preguntas4 {
   /* HIJO 4   */
   -ms-grid-row: 4;
   -ms-grid-column: 1;
@@ -374,5 +372,11 @@ footer .textoFooter {
   color: white;
   font-family: 'Roboto Mono', monospace;
   font-size: xx-large;
+}
+
+.NuevoFooter {
+  background-color: black;
+  height: 200px;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */

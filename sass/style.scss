@@ -3,9 +3,8 @@
 $fondo: linear-gradient(to left,rgb(211, 209, 209), white);
 
 * {
-    @include recet();
+    @include recet;
 }
-
 
 body { 
     background-image: $fondo;
@@ -15,31 +14,26 @@ html {
     scroll-behavior: smooth;
 }
 
-.cuerpoGrid { /* CONTEINER DEL MAIN INDEX */
-    @include containerIndex();
-}
+.cuerpoGrid { /* CONTEINER PADRE INDEX */
+    @include containerIndex;
 
-    .cuerpoMain1{      /* HIJO 1 */
-        grid-area: main1;
-        @include cajitas();
-            
+
+    .cuerpoMain1{   /* HIJO 1 */
+      @include cajitas (main1);
     }
     
     .cuerpoMain2{  /* HIJO 2 */
-        grid-area: main2;
-        @include cajitas();
-            
+      @include cajitas(main2);
     }
-    
     
     .cuerpoMain3{  /* HIJO 3 */
-        grid-area: main3;
-        @include cajitas(); 
-            
+      @include cajitas(main3); 
     }
     
+}
+
 article {
-        @include article();  
+  @include article (black);  
 }
 
 .footerGrid {   /* Container del footer */
@@ -48,7 +42,7 @@ article {
 
 
 footer .textoFooter {
-   @include cajitaFooter();
+   @include cajitaFooter(textoFooter);
 }
 
 .cuerpoTerapias {
@@ -65,86 +59,74 @@ footer .textoFooter {
     color:thistle;
  }
   
-.contactoGrid { /* CONTEINER DEL MAIN pagina contacto */
-     @include ContainerContacto();
-}
+.contactoGrid { /* CONTEINER PADRE pagina contacto */
+     @include ContainerContacto;
 
-.contacto1{      /* HIJO 1 */
-    grid-area: contacto1;
-   @include cajitaContacto();
-}
 
-.contacto2{      /* HIJO 2 */
-    grid-area: contacto2;
-  @include cajitaContacto();
-}
+         .contacto1{      /* HIJO 1 */
+   
+         @include cajitaContacto(contacto1);
+         }
 
+         .contacto2{      /* HIJO 2 */
+    
+         @include cajitaContacto(contacto2);
+        }
+}
 
 .fondoContacto {     /* foto de contacto */
-    @include fondoContacto();
+    @include fondoContacto;
 }
 
 
 .fondoTerapias {     /* foto de terapias */
-    @include fondoTerapias();
+    @include fondoTerapias;
 }
 
 .fondoConoceme {     /* foto de conoceme */
-    @include fondoConoceme();
+    @include fondoConoceme;
 }
 
 
 .fondoPreguntas {     /* foto de preguntas */
-    @include fondoPreguntas();
+    @include fondoPreguntas;
 }
 
 
-.conocemeGrid { /* CONTEINER DEL MAIN pagina conoceme */
-    @include containerConoceme();
+.conocemeGrid { /* CONTEINER padre pagina conoceme */
+    @include containerConoceme;
+
+
+         .conoceme1{      /* HIJO 1  */
+          @include cajitasConoceme (conoceme1);
+        }
+
+        .conoceme2{      /* hijo 2  */
+         @include cajitasConoceme (conoceme2);
+        }
 }
 
-.conoceme1{      /* HIJO 1  */
-   grid-area: conoceme1;
-  @include cajitasConoceme();
-   
-}
-
-.conoceme2{      /* hijo 2  */
-   grid-area: conoceme2;
-  @include cajitasConoceme();
-}
-
-
-.preguntasGrid { /* CONTEINER DEL MAIN preguntas */
+ .preguntasGrid { /* CONTEINER PADRE preguntas */
    @include containerPreguntas();
-}
 
 
-.preguntas1{      /* HIJO 1     */
-   grid-area: preguntas1;
-  @include cajitasPreguntas();
-   
-}
+     .preguntas1{      /* HIJO 1     */
+      @include cajitasPreguntas (preguntas1);
+     }
 
-.preguntas2{      /* HIJO 2
-    */
-   grid-area: preguntas2;
-   @include cajitasPreguntas();
-   
-}
-.preguntas3{      /* HIJO 3
-    */
-   grid-area: preguntas3;
-   @include cajitasPreguntas();
-   
-}
+     .preguntas2{      /* HIJO 2    */
+      @include cajitasPreguntas(preguntas2);
+     }
+    
+     .preguntas3{      /* HIJO 3    */
+      @include cajitasPreguntas(preguntas3);
+     }
 
-.preguntas4{      /* HIJO 4   */
-   grid-area: preguntas4;
-   @include cajitasPreguntas();
-   
-}
+    .preguntas4{      /* HIJO 4   */
+     @include cajitasPreguntas(preguntas4);
+     }
 
+}
 .animate__animated.animate__heartBeat { 
     --animate-duration: 12s;
   }
@@ -179,3 +161,8 @@ footer .textoFooter {
     font-size: xx-large;
 }
 
+.NuevoFooter {
+    background-color: black;
+    height: 200px;
+    width: auto;
+}
