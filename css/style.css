@@ -1,5 +1,5 @@
 * {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Rubik', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
@@ -8,8 +8,8 @@
 }
 
 body {
-  background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
-  background-image: linear-gradient(to left, #d3d1d1, white);
+  background-image: -webkit-gradient(linear, right top, left top, from(silver), to(white));
+  background-image: linear-gradient(to left, silver, white);
 }
 
 html {
@@ -20,8 +20,8 @@ html {
   /* CONTEINER PADRE INDEX */
   display: -ms-grid;
   display: grid;
-  background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
-  background-image: linear-gradient(to left, #d3d1d1, white);
+  background-image: -webkit-gradient(linear, right top, left top, from(silver), to(white));
+  background-image: linear-gradient(to left, silver, white);
       grid-template-areas: 'main1 main2 main3';
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
@@ -36,10 +36,11 @@ html {
   grid-area: main1;
   display: -ms-grid;
   display: grid;
-  border: 1px inset whitesmoke;
   margin: 50px;
   padding: 50px;
   text-align: center;
+  -webkit-box-shadow: 0 3px 10px 0px #242222;
+          box-shadow: 0 3px 10px 0px #242222;
 }
 
 .cuerpoGrid .cuerpoMain2 {
@@ -49,10 +50,11 @@ html {
   grid-area: main2;
   display: -ms-grid;
   display: grid;
-  border: 1px inset whitesmoke;
   margin: 50px;
   padding: 50px;
   text-align: center;
+  -webkit-box-shadow: 0 3px 10px 0px #242222;
+          box-shadow: 0 3px 10px 0px #242222;
 }
 
 .cuerpoGrid .cuerpoMain3 {
@@ -62,10 +64,11 @@ html {
   grid-area: main3;
   display: -ms-grid;
   display: grid;
-  border: 1px inset whitesmoke;
   margin: 50px;
   padding: 50px;
   text-align: center;
+  -webkit-box-shadow: 0 3px 10px 0px #242222;
+          box-shadow: 0 3px 10px 0px #242222;
 }
 
 article {
@@ -118,8 +121,8 @@ footer .textoFooter {
 }
 
 .cuerpoTerapias {
-  background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
-  background-image: linear-gradient(to left, #d3d1d1, white);
+  background-image: -webkit-gradient(linear, right top, left top, from(silver), to(white));
+  background-image: linear-gradient(to left, silver, white);
   border: 4px inset white;
   margin: 9%;
   padding: 0%;
@@ -136,14 +139,13 @@ footer .textoFooter {
   /* CONTEINER PADRE pagina contacto */
   display: -ms-grid;
   display: grid;
-  background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
-  background-image: linear-gradient(to left, #d3d1d1, white);
+  background-image: -webkit-gradient(linear, right top, left top, from(silver), to(white));
+  background-image: linear-gradient(to left, silver, white);
       grid-template-areas: 'contacto1 contacto2';
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
-  border: 10px inset black;
   margin: 0px;
   padding: 0px;
 }
@@ -155,10 +157,11 @@ footer .textoFooter {
   grid-area: contacto1;
   display: -ms-grid;
   display: grid;
-  border: 4px dotted black;
   margin: 30px;
   padding: 30px;
   text-align: center;
+  -webkit-box-shadow: 0 3px 10px 0px #242222;
+          box-shadow: 0 3px 10px 0px #242222;
 }
 
 .contactoGrid .contacto2 {
@@ -168,10 +171,11 @@ footer .textoFooter {
   grid-area: contacto2;
   display: -ms-grid;
   display: grid;
-  border: 4px dotted black;
   margin: 30px;
   padding: 30px;
   text-align: center;
+  -webkit-box-shadow: 0 3px 10px 0px #242222;
+          box-shadow: 0 3px 10px 0px #242222;
 }
 
 .fondoContacto {
@@ -230,8 +234,8 @@ footer .textoFooter {
   /* CONTEINER padre pagina conoceme */
   display: -ms-grid;
   display: grid;
-  background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
-  background-image: linear-gradient(to left, #d3d1d1, white);
+  background-image: -webkit-gradient(linear, right top, left top, from(silver), to(white));
+  background-image: linear-gradient(to left, silver, white);
       grid-template-areas: 'conoceme1 conoceme2';
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
@@ -271,8 +275,8 @@ footer .textoFooter {
   /* CONTEINER PADRE preguntas */
   display: -ms-grid;
   display: grid;
-  background-image: -webkit-gradient(linear, right top, left top, from(#d3d1d1), to(white));
-  background-image: linear-gradient(to left, #d3d1d1, white);
+  background-image: -webkit-gradient(linear, right top, left top, from(silver), to(white));
+  background-image: linear-gradient(to left, silver, white);
       grid-template-areas: 'preguntas1' 'preguntas2' 'preguntas3' 'preguntas4';
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -375,8 +379,135 @@ footer .textoFooter {
 }
 
 .NuevoFooter {
-  background-color: black;
-  height: 200px;
+  background-image: url(../multimedia/background-maderaBlanca.jpg);
+  height: 250px;
   width: auto;
+}
+
+.redes-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.redes-container ul li {
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.redes-container a {
+  display: block;
+  margin: 8px;
+  padding: 0 10px;
+  color: black;
+  line-height: 50px;
+  font-size: 18px;
+  -webkit-box-shadow: 0 3px 10px 0px #242222;
+          box-shadow: 0 3px 10px 0px #242222;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.redes-container ul:hover a {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.redes-container ul li a:hover {
+  -webkit-transform: translateY(-3px) scale(1.05);
+          transform: translateY(-3px) scale(1.05);
+  -webkit-box-shadow: 0 5px 5px 0px black;
+          box-shadow: 0 5px 5px 0px black;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.redes-container ul li .whatsapp:hover {
+  background: #05b105;
+}
+
+.redes-container ul li .email:hover {
+  background: blueviolet;
+}
+
+.redes-container ul li .linkedin:hover {
+  background: #1a1aee;
+}
+
+.redes-container ul li .Instagram:hover {
+  background: #fd6028;
+}
+
+.NavFooter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+}
+
+.NavFooter ul li {
+  margin: 0 5px;
+  text-align: center;
+  display: block;
+}
+
+.NavFooter a {
+  display: block;
+  margin: 8px;
+  padding: 0 10px;
+  color: black;
+  line-height: 40px;
+  font-size: 18px;
+  -webkit-box-shadow: 0 3px 10px 0px #242222;
+          box-shadow: 0 3px 10px 0px #242222;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.NavFooter a:hover {
+  color: grey;
+}
+
+.NavFooter ul:hover a {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.NavFooter ul:hover a {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.NavFooter ul li a:hover {
+  -webkit-transform: translateY(-3px) scale(1.05);
+          transform: translateY(-3px) scale(1.05);
+  -webkit-box-shadow: 0 5px 5px 0px black;
+          box-shadow: 0 5px 5px 0px black;
+  -webkit-filter: none;
+          filter: none;
+  background: black;
+}
+
+.columna1footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  color: black;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
