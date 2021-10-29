@@ -2,132 +2,39 @@
 
 $fondo: linear-gradient(to left,rgb(192, 192, 192), white);
 $borderBox : 0 3px 10px 0px rgb(36, 34, 34);
+$flex : flex;
+$block: block;
 * {
     @include recet;
-}
-
-body { 
-    background-image: $fondo;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.cuerpoGrid { /* CONTEINER PADRE INDEX */
-    @include containerIndex;
+h4 {
+    color: rgb(223, 130, 146);
+}
 
-    .cuerpoMain1{   /* HIJO 1 */
-      @include cajitas (main1);
-    }
-    
-    .cuerpoMain2{  /* HIJO 2 */
-      @include cajitas(main2);
-    }
-    
-    .cuerpoMain3{  /* HIJO 3 */
-      @include cajitas(main3); 
-    }
-    
+h5 {
+    color: black;
+}
+
+p {
+    color: rebeccapurple;
+}
+
+body { 
+    background-image: $fondo;
 }
 
 article {
-  @include article (black);  
+  @include article (rgb(224, 149, 162));  
 }
 
-.footerGrid {   /* Container del footer */
-    @include ContainerFooter();
-}
-
-
-footer .textoFooter {
-   @include cajitaFooter(textoFooter);
-}
-
-.cuerpoTerapias {
-    background-image: $fondo;
-    border: 4px inset white;
-    margin: 9%;
-    padding: 0%;
-    text-align: center;
-}
-
-.mainContacto {
-    background-image: url(../multimedia/japanese-umbrellas-636870_1920.jpg);
-    height: 100%;
-    color:thistle;
- }
-  
-.contactoGrid { /* CONTEINER PADRE pagina contacto */
-     @include ContainerContacto;
-
-
-         .contacto1{      /* HIJO 1 */
-   
-         @include cajitaContacto(contacto1);
-         }
-
-         .contacto2{      /* HIJO 2 */
-    
-         @include cajitaContacto(contacto2);
-        }
-}
-
-.fondoContacto {     /* foto de contacto */
-    @include fondoContacto;
-}
-
-
-.fondoTerapias {     /* foto de terapias */
-    @include fondoTerapias;
-}
-
-.fondoConoceme {     /* foto de conoceme */
-    @include fondoConoceme;
-}
-
-
-.fondoPreguntas {     /* foto de preguntas */
-    @include fondoPreguntas;
-}
-
-
-.conocemeGrid { /* CONTEINER padre pagina conoceme */
-    @include containerConoceme;
-
-
-         .conoceme1{      /* HIJO 1  */
-          @include cajitasConoceme (conoceme1);
-        }
-
-        .conoceme2{      /* hijo 2  */
-         @include cajitasConoceme (conoceme2);
-        }
-}
-
- .preguntasGrid { /* CONTEINER PADRE preguntas */
-   @include containerPreguntas();
-
-
-     .preguntas1{      /* HIJO 1     */
-      @include cajitasPreguntas (preguntas1);
-     }
-
-     .preguntas2{      /* HIJO 2    */
-      @include cajitasPreguntas(preguntas2);
-     }
-    
-     .preguntas3{      /* HIJO 3    */
-      @include cajitasPreguntas(preguntas3);
-     }
-
-    .preguntas4{      /* HIJO 4   */
-     @include cajitasPreguntas(preguntas4);
-     }
-
-}
+                                                                  /* ANIMACIONES */
 .animate__animated.animate__heartBeat { 
-    --animate-duration: 12s;
+    --animate-duration: 3s;
   }
 
 .animate__animated.animate__backInDown {
@@ -142,7 +49,18 @@ footer .textoFooter {
     --animate-duration: 4s;
 }
 .animate__animated.animate__zoomIn {
-    --animate-duration: 4s;
+    --animate-duration: 8s;
+}
+
+.animate__animated.animate__pulse {
+    --animate-duration: 5s;
+}
+
+.animate__slideOutLeft {
+    --animate-duration: 10s;
+}
+.animate__fadeIn {
+    --animate-duration: 10s;
 }
 
 .trans {
@@ -162,116 +80,82 @@ footer .textoFooter {
 
 .NuevoFooter {
     background-image: url(../multimedia/background-maderaBlanca.jpg);
-    height: 250px;
+    height:auto;
     width: auto;
 }
 
-.redes-container {
-    display: flex;
-   
-    align-items: center;
-    justify-content: center;
- 
-    ul li {
-        margin: 0 5px;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        
-    }
- 
-    a {
-    
-    display: block;
-     margin: 8px;
-     padding: 0 10px;
-     color:black;
-     line-height: 50px;
-     font-size: 18px;
-     box-shadow: 0 3px 10px 0px rgb(36, 34, 34);
-     transition: .2s;
-     }
-   
-     ul:hover a {
-        filter: blur(2px);
-    }
+.fondoConoceme {
+    @include fondoConoceme ($borderBox)
+}
 
-    ul li a:hover {
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 5px 5px 0px black;
-        filter: none;
-    }
-   
-    ul li .whatsapp:hover {
-        background: rgb(5, 177, 5);
-    }
-    ul li .email:hover {
-        background: blueviolet;
-     }
+.FondoReserva {
+    @include fondoReserva ($borderBox)
+}
 
-     ul li .linkedin:hover {
-        background: rgb(26, 26, 238);
-    }
-    ul li .Instagram:hover {
-        background: rgb(253, 96, 40);
-    }
-
+.FondoPreguntasF {
+    @include FondoPreguntasf ($borderBox);
 }
 
 
-.NavFooter {
-    align-items: center;
-    justify-content: center;
-    display: block ;
-   
-    ul li {
-        margin: 0 5px;
-        
-        text-align: center;
-        display: block;
-    }
-  
-    a {
-        display: block;
-        margin: 8px;
-        padding: 0 10px;
-       
-        color:black;
-        line-height: 40px;
-        font-size: 18px;
-        box-shadow: 0 3px 10px 0px rgb(36, 34, 34);
-        transition: .2s;
-    }
-    
-    a:hover {
-        color:grey;
-    }
-    ul:hover a {
-        filter: blur(2px);
-    }
+.redes-container {
+    @include redes-container ($flex);
+}
 
-    ul:hover a {
-        filter: blur(2px);
-    }
-    ul li a:hover {
-        transform: translateY(-3px) scale(1.05);
-        box-shadow: 0 5px 5px 0px black;
-        filter: none;
-        background: black;
-    }
-   
+.NavFooter {
+    @include NavFooter ($block);
 }
 
 .columna1footer {
-   display: flex;
-    font-size: 18px;
-    color: black;
-    align-items: flex-end;
-    
-    margin: 0px;
-    
+   @include columna1footer ($flex);
 }
 
+.primeraSesion {
+    @include primeraSesion ($borderBox)
+}
+
+.LIC {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+.click {
+   font-size: 30px;
+    color: black;
+    a:hover {
+        color: rgb(223, 130, 146);
+    }
+}
+
+
+.clickEmail {
+    font-size: 30px;
+    color: black;
+     a:hover {
+        color:rgb(223, 130, 146);
+     }
+}
+
+
+.img-fluid {
+    box-shadow:  0 3px 20px 0px rebeccapurple;
+}
+
+.TextoConoceme {
+    color: rebeccapurple;
+}
+
+.cajitas {
+    margin: 50px;
+    padding: 50px;
+    text-align: center;  
+    box-shadow: $borderBox;
+}
+
+.preguntas {
+    box-shadow: $borderBox;
+}
 
 
 
