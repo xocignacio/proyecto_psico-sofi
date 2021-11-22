@@ -1,0 +1,563 @@
+@import "mixin";
+
+$fondo: linear-gradient(to left,rgb(192, 192, 192), white);
+$borderBox : 0 3px 10px 0px rgb(36, 34, 34);
+* {
+    @include recet;
+}
+
+body { 
+    background-image: $fondo;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cuerpoGrid { /* CONTEINER PADRE INDEX */
+    @include containerIndex;
+
+    .cuerpoMain1{   /* HIJO 1 */
+      @include cajitas (main1);
+    }
+    
+    .cuerpoMain2{  /* HIJO 2 */
+      @include cajitas(main2);
+    }
+    
+    .cuerpoMain3{  /* HIJO 3 */
+      @include cajitas(main3); 
+    }
+    
+}
+
+article {
+  @include article (rgb(224, 149, 162));  
+}
+
+.footerGrid {   /* Container del footer */
+    @include ContainerFooter();
+}
+
+
+footer .textoFooter {
+   @include cajitaFooter(textoFooter);
+}
+
+.cuerpoTerapias {
+    background-image: $fondo;
+    border: 4px inset white;
+    margin: 9%;
+    padding: 0%;
+    text-align: center;
+}
+
+.mainContacto {
+    background-image: url(../multimedia/japanese-umbrellas-636870_1920.jpg);
+    height: 100%;
+    color:thistle;
+ }
+  
+.contactoGrid { /* CONTEINER PADRE pagina contacto */
+     @include ContainerContacto;
+
+
+         .contacto1{      /* HIJO 1 */
+   
+         @include cajitaContacto(contacto1);
+         }
+
+         .contacto2{      /* HIJO 2 */
+    
+         @include cajitaContacto(contacto2);
+        }
+}
+
+.fondoContacto {     /* foto de contacto */
+    @include fondoContacto;
+}
+
+
+.fondoTerapias {     /* foto de terapias */
+    @include fondoTerapias;
+}
+
+.fondoConoceme {     /* foto de conoceme */
+    @include fondoConoceme;
+}
+
+
+.fondoPreguntas {     /* foto de preguntas */
+    @include fondoPreguntas;
+}
+
+
+.conocemeGrid { /* CONTEINER padre pagina conoceme */
+    @include containerConoceme;
+
+
+         .conoceme1{      /* HIJO 1  */
+          @include cajitasConoceme (conoceme1);
+        }
+
+        .conoceme2{      /* hijo 2  */
+         @include cajitasConoceme (conoceme2);
+        }
+}
+
+ .preguntasGrid { /* CONTEINER PADRE preguntas */
+   @include containerPreguntas();
+
+
+     .preguntas1{      /* HIJO 1     */
+      @include cajitasPreguntas (preguntas1);
+     }
+
+     .preguntas2{      /* HIJO 2    */
+      @include cajitasPreguntas(preguntas2);
+     }
+    
+     .preguntas3{      /* HIJO 3    */
+      @include cajitasPreguntas(preguntas3);
+     }
+
+    .preguntas4{      /* HIJO 4   */
+     @include cajitasPreguntas(preguntas4);
+     }
+
+}
+.animate__animated.animate__heartBeat { 
+    --animate-duration: 3s;
+  }
+
+.animate__animated.animate__backInDown {
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__flipInX  {
+    --animate-duration: 5s;
+}
+
+.animate__animated.animate__slideInLeft  {
+    --animate-duration: 4s;
+}
+.animate__animated.animate__zoomIn {
+    --animate-duration: 8s;
+}
+
+
+.animate__animated.animate__pulse {
+    --animate-duration: 5s;
+}
+
+.animate__slideOutLeft {
+    --animate-duration: 10s;
+}
+.animate__fadeIn {
+    --animate-duration: 10s;
+}
+
+.trans {
+    height: 100px;
+    transition: height 2s;
+}
+
+.trans:hover{
+    height: 200px;
+}
+
+.textoCarrusel {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: xx-large;
+}
+
+.NuevoFooter {
+    background-image: url(../multimedia/background-maderaBlanca.jpg);
+    height:auto;
+    width: auto;
+}
+
+.redes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    ul li {
+        margin: 0 5px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+       
+        
+        
+    }
+ 
+    a {
+    
+    display: block;
+     margin: 8px;
+     padding: 0 10px;
+     color:black;
+     line-height: 50px;
+     font-size: 18px;
+     box-shadow: 0 3px 10px 0px rgb(36, 34, 34);
+     transition: .2s;
+     }
+   
+     ul:hover a {
+        filter: blur(2px);
+    }
+
+    ul li a:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px black;
+        filter: none;
+    }
+   
+    ul li .whatsapp:hover {
+        background: rgb(5, 177, 5);
+    }
+    ul li .email:hover {
+        background: blueviolet;
+     }
+
+     ul li .linkedin:hover {
+        background: rgb(26, 26, 238);
+    }
+    ul li .Instagram:hover {
+        background: rgb(253, 96, 40);
+    }
+
+}
+
+
+.NavFooter {
+    align-items: center;
+    justify-content: center;
+    display: block ;
+   
+    ul li {
+        margin: 0 5px;
+        
+        text-align: center;
+        display: block;
+    }
+  
+    a {
+        display: block;
+        margin: 8px;
+        padding: 0 10px;
+       
+        color:black;
+        line-height: 40px;
+        font-size: 18px;
+        
+        transition: .2s;
+    }
+    
+    a:hover {
+        color:black;
+    }
+    ul:hover a {
+        filter: blur(2px);
+    }
+
+    ul:hover a {
+        filter: blur(2px);
+    }
+    ul li a:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 5px 5px 0px black;
+        filter: none;
+        background:rebeccapurple;
+    }
+   
+}
+
+.columna1footer {
+   display: flex;
+    font-size: 18px;
+    color: black;
+    align-items: flex-end;
+    text-align: center;
+    margin: 0px;
+    color: rebeccapurple;
+}
+
+.LIC {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+h4 {
+    color: rgb(223, 130, 146);
+   
+}
+
+h5 {
+color: black;
+}
+
+.click {
+   font-size: 30px;
+    color: black;
+    a:hover {
+        color: rgb(223, 130, 146);
+    }
+}
+
+.FondoReserva {
+    background-image: url(../multimedia/FondoBlancoRESERVA.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+    margin: 50px;
+    padding: 50px;
+    text-align: center;  
+    box-shadow: $borderBox;
+}
+
+.clickEmail {
+    font-size: 30px;
+    color: black;
+    a:hover {
+        color:rgb(223, 130, 146);
+    }
+}
+
+.FondoPreguntasF {
+    background-image: url(../multimedia/tori-1976609_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+    margin: 50px;
+    padding: 50px;
+    text-align: center;  
+    box-shadow: $borderBox;
+}
+
+.fondoConoceme {
+    background-image: url(../multimedia/universe-g9e0278449_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+    margin: 50px;
+    padding: 50px;
+    text-align: center;  
+    box-shadow: $borderBox;
+}
+
+.img-fluid {
+    box-shadow:  0 3px 20px 0px rebeccapurple;
+    
+}
+
+.TextoConoceme {
+    color: rebeccapurple;
+
+  
+   
+}
+
+.cajitas {
+    margin: 50px;
+        padding: 50px;
+        text-align: center;  
+        box-shadow: $borderBox;
+      
+}
+
+.primeraSesion {
+    text-align: center;
+    font-size: 25px;
+    box-shadow: $borderBox;
+    border-radius: 80px 20px;
+    margin: 50px;
+    padding: 10px;
+    color: black;
+    
+}
+
+.preguntas {
+    box-shadow: $borderBox;
+}
+
+p {
+    color: rebeccapurple;
+}
+
+
+
+/* mixins */
+@mixin containerIndex {
+    display: grid;
+    background-image: $fondo;
+    grid-template-areas: 'main1 main2 main3';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 20px;
+}
+
+
+@mixin cajitas ($gridArea) {
+        grid-area: $gridArea;
+        display: grid;
+      
+        margin: 50px;
+        padding: 50px;
+        text-align: center;  
+        box-shadow: $borderBox;
+}
+
+@mixin article ($color) {
+    color: $color;
+    justify-items: center;
+    font-size: 20px;      
+
+}
+
+@mixin ContainerFooter {
+    display: grid;
+    grid-template-areas: '.  . textoFooter';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 180px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 5px outset white;
+    background-image: url(../multimedia/background-maderaBlanca.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    color: rgb(252, 243, 252);
+
+}
+
+@mixin cajitaFooter ($gridArea) {
+    color: black;
+    grid-area: $gridArea;
+    text-align: right;
+    display: flex;
+    height: 100px;
+    border-left: 4px inset white;
+    display: block;
+    font-size:24px;
+    text-align: center;
+    padding: 0%;
+    margin: 1%;
+    
+}
+
+@mixin ContainerContacto {
+    display: grid;
+    background-image: $fondo;
+    grid-template-areas: 'contacto1 contacto2';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+   
+    margin:0px;
+    padding: 0px;
+    
+ }
+
+ @mixin cajitaContacto ($gridArea) {
+    grid-area: $gridArea ;
+    display: grid;
+  
+    margin: 30px;
+    padding: 30px;
+    text-align: center;  
+    box-shadow: 0 3px 10px 0px rgb(36, 34, 34)
+    
+    
+}
+
+@mixin containerConoceme {
+    display: grid;
+    background-image: $fondo;
+    grid-template-areas: 'conoceme1 conoceme2';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin:0px;
+    padding: 0px;
+}
+
+@mixin cajitasConoceme ($gridArea) {
+    grid-area: $gridArea;
+    display: grid;
+    margin:30px;
+    padding: 30px;
+    text-align: center;  
+    justify-items: center;
+}
+
+@mixin containerPreguntas {
+    display: grid;
+    background-image: $fondo;
+    grid-template-areas: 'preguntas1'
+                         'preguntas2'
+                         'preguntas3'
+                         'preguntas4';
+                         
+    grid-template-columns: 1fr ;
+    grid-template-rows: 5fr;
+    margin:0px;
+    padding: 0px;
+    
+}
+
+@mixin cajitasPreguntas ($gridArea) {
+    grid-area: $gridArea;
+    display: grid;
+    color: black;
+    margin: 15px + (15);
+    padding: 15px + (15);
+    text-align: center;  
+    justify-items: center;
+    
+}
+
+@mixin fondoContacto {
+    background-image: url(../multimedia/japanese-umbrellas-636870_1920.jpg);
+    display: flex;
+    min-height: 500px + (200);
+    border: 0px inset rgb(79, 37, 194);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin fondoTerapias {
+    background-image: url(../multimedia/origami-3584204_1920.jpg);
+    display: flex;
+    min-height: 250px + (200);
+    border: 0px inset rgb(79, 37, 194);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+}
+@mixin fondoConoceme {
+    background-image:url(../multimedia/fondoConoceme.jpg);
+    display: flex;
+    min-height: 439px;
+    border: 0px inset rgb(79, 37, 194);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: unset;
+}
+
+@mixin fondoPreguntas {
+    background-image:url(../multimedia/tori-1976609_1280.jpg);
+    display: flex;
+    height: 300px + (200);
+    border: 0px inset rgb(79, 37, 194);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
