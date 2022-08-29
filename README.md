@@ -10,5 +10,5 @@ A su vez se aplican conceptos de SEO para optimizar el codigo, utilizando correc
 
 
 
--  [Page]( https://xocignacio.github.io/proyectoJs/  )  | ✨ ProyectoJS ✨
+-  [Page]( https://xocignacio.github.io/proyecto_psico-sofi/  )  | ✨ Proyecto HTML y CSS ✨
 
